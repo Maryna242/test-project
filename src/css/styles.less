@@ -177,15 +177,17 @@ header{
     
 }
 .red_forms{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 15px;
 
     .reds{
-        max-width: 358px;
+        width: calc((100% / 3) - 20px);
+        flex-grow: 1;
         min-height: 358px;
         background-color: #ff5c36;
+        min-width: 280px;
     }
 }
 .block{
@@ -301,23 +303,16 @@ header{
                 align-items: center;
                 justify-content: center;
                 progress{
-                    height: 10px;
+                    height: 6px;
                     border-radius: 4px;
-                    background: initial;
-                    border: 1px solid #000;
-                    &::-webkit-progress-value {
-                        background: red;
-                    }
-                    &[value]::-webkit-progress-value {
-                        background-image:
-                             -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
-                             -webkit-linear-gradient(top, rgba(255, 255, 255, .25), rgba(0, 0, 0, .25)),
-                             -webkit-linear-gradient(left, #09c, #f44);
-                      
-                          border-radius: 2px; 
-                          background-size: 35px 20px, 100% 100%, 100% 100%;
-                      }
+                    border: 1px solid #817f7e;
                 }
+                    progress::-webkit-progress-value {
+                        background-color: #ff5c36;
+                    }
+                    
+                    
+                
                 
                 
             }
