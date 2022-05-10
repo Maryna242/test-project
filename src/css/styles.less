@@ -288,11 +288,13 @@ header{
 // }
 .section-skill{
     &__form{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
         &-card{
-            max-width: 360px;
+            width: calc((100% / 3) - 10px);
+            min-width: 300px;
             min-height: 440px;
             background-color: #ff5c36;
             &:nth-child(2){
