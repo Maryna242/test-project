@@ -364,10 +364,10 @@ header{
         }
     }
 }
-  .section_clients{
-      &_form{
-        display: flex;
-        gap: 10px;
+.section_clients{
+    &_form{
+    display: flex;
+    gap: 10px;
         &-cards{
             position: relative;
             width: calc((100% / 2) - 10px);
@@ -375,6 +375,7 @@ header{
             border: #d3d3d3 solid 1px;
             padding: 60px 15px 30px;
             margin-top: 50px;
+            transition: box-shadow 0.2s linear;
             &::before{
                 content: '';
                 top: 0;
@@ -387,20 +388,33 @@ header{
                 left: 50%;
                 position: absolute;
             }
-          p{
-              font-size: 17px;
-              font-family: 'Source Sans Pro', sans-serif;
-              text-align: center;
-              max-width: 450px;
-              margin: 0 auto;
-          }
-          .stars{
-              text-align: center;
-              padding: 20px;
-          }
-          .text{
-              text-align: center;
-          }
+            p{
+                font-size: 17px;
+                font-family: 'Source Sans Pro', sans-serif;
+                text-align: center;
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            .stars{
+                text-align: center;
+                padding: 20px;
+            }
+            .text{
+                text-align: center;
+            }
+            &:hover {
+                box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+            border-color: transparent;    
+            }
         }
-      }
-  }
+    }
+}
+.section_partners{
+    &-form{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 75px 0 95px;
+        
+    }
+}
