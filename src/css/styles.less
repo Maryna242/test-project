@@ -17,6 +17,10 @@ header{
             font-family: 'Open Sans';
             border-radius: 2px; 
             color: #6f6f6f;
+            transition: box-shadow 0.2s linear,;
+            &:hover{
+                box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+            }
         }
         .s{
             color: #fa9a87;
@@ -101,22 +105,27 @@ header{
     .flex{
         display: flex;
         justify-content: center;
+        a{
+            text-decoration: none;
+            max-width: 240px;
+            min-height: 64px;
+            background-color: #ff5c36;
+            border-radius: 50px;
+            font-family:'Open Sans';
+            font-size: 16px;
+            padding: 0px 70px;
+            color: #fff;
+            margin: 5px 0px;
+            display: flex;
+            align-items: center;
+            transition: box-shadow 0.2s linear,;
+            &:hover{
+                box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+            }
+        }   
     }
-    .form_red{
-        text-decoration: none;
-        max-width: 240px;
-        min-height: 64px;
-        background-color: #ff5c36;
-        border-radius: 50px;
-        font-family:'Open Sans';
-        font-size: 16px;
-        padding: 0px 70px;
-        color: #fff;
-        margin: 5px 0px;
-        display: flex;
-        align-items: center;
-    }       
-}
+    }
+    
 .forms_multicolored{
     display: flex;
     justify-content: space-between;
@@ -139,6 +148,31 @@ header{
         }
         &_pink{
             background-color: #f74770;
+        }
+        a{
+            text-decoration: none;
+            text-decoration: none;
+            width: 210px;
+            min-height: 60px;
+            background-color: #fff;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            margin: auto 0;
+            align-items: center;
+            border: #d3d3d3 solid 1px;
+            transition: box-shadow 0.2s linear;
+            color: #737373;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            position: absolute;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            transition: box-shadow 0.2s linear,;
+            &:hover {
+                box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+            }
         }
     }
     .cells{
@@ -212,7 +246,8 @@ header{
                         text-align: start;
                         margin-bottom: 16px;
                     }
-                    .form_white{
+                    a{
+                        text-decoration: none;
                         max-width: 208px;
                         min-height: 60px;
                         background-color: #fff;
@@ -221,6 +256,11 @@ header{
                         justify-content: center;
                         margin: auto 0;
                         align-items: center;
+                        border: #d3d3d3 solid 1px;
+                        transition: box-shadow 0.2s linear,;
+                        color: #737373;
+                        font-size: 16px;
+                        font-family: 'Open Sans';
                         &:hover {
                             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
                         }
@@ -238,6 +278,8 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: box-shadow 0.2s linear;
+        background-color: #fbfbfb;
         &:hover {
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
@@ -404,7 +446,7 @@ header{
             }
             &:hover {
                 box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
-            border-color: transparent;    
+                border-color: transparent;    
             }
         }
     }
@@ -436,6 +478,11 @@ footer{
         padding: 20px 90px;
         border-radius: 50px;
         text-align: center;
+        transition: box-shadow 0.2s linear,;
+        border: #d3d3d3 solid 1px;
+        &:hover {
+            box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+        }
     }
     .footer_logo{
         display: flex;
@@ -452,6 +499,25 @@ footer{
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: box-shadow 0.2s linear, background-color 0.2s linear;
+            &:hover {
+                box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
+                background-color: #ff6e47;
+            }
+        }
+        p{
+            font-size: 17px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    }
+}
+@media (max-width:768px) {
+    .apple_watch{
+        width: 30px;
+    }
+    .apple{
+        &_watch{
+
         }
     }
 }
