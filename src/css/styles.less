@@ -55,7 +55,9 @@ header{
             .smart{
                 color: #fc7254;
             }
-        
+            @media (max-width:350px) {
+                font-size: 30px;
+            }
         }
         .lorem{
             font-size: 16px;
@@ -95,19 +97,18 @@ header{
         border: none;
         border-bottom: 1px solid #c7c7c7;
         padding: 10px;
-        width: 300px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
         font-size: 15px;
         font-family: 'Open Sans';
+        margin: 0 30px;
+        @media (max-width:320px) {
+            max-width: 155px;
+        }
     }
     .flex{
         display: flex;
         justify-content: center;
         a{
             text-decoration: none;
-            max-width: 240px;
             min-height: 64px;
             background-color: #ff5c36;
             border-radius: 50px;
@@ -122,15 +123,19 @@ header{
             &:hover{
                 box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
             }
+            @media (max-width:320px) {
+                max-width: 65px;
+            }
         }   
     }
     }
     
 .forms_multicolored{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    gap: 43px;
     .form{
         width: 260px;
         min-height: 260px;
@@ -173,7 +178,10 @@ header{
             &:hover {
                 box-shadow: 0 3px 15px rgb(0 0 0 / 40%);
             }
+            
+            
         }
+        
     }
     .cells{
         display: flex;
@@ -223,6 +231,7 @@ header{
         min-height: 358px;
         background-color: #ff5c36;
         min-width: 280px;
+        
     }
 }
 .block{
@@ -268,6 +277,18 @@ header{
                     }
                 }
             }
+            >img{
+                @media (max-width:770px) {
+                    max-width: 300px;
+                }
+                @media (max-width:600px) {
+                    max-width: 200px;
+                    margin: auto;
+                }
+                @media (max-width:500px) {
+                    display: none;
+                }
+            }
         }
     }
     &_white{
@@ -289,46 +310,6 @@ header{
     }
     
 }
-// .block_design{
-//     display: flex;
-//     justify-content: space-between;
-    
-    
-//     .block_white{
-//         width: 100px;
-//         min-height: 95px;
-//         color: #fbfbfb;
-        
-//         margin-top: 20px;
-//     }
-//     .block_white:hover {
-//         box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-//     }
-//     .modern{
-//         font-size: 30px;
-//         font-family: 'OPEN SANS';
-//         color: #676767;
-//         &_app{
-//             max-width: 520px;
-//             .lorem{
-//                 text-align: start;
-//                 margin-bottom: 16px;
-//             }
-//         }
-//     }
-//     .white_img{
-//         display: flex;
-//         margin: 0 auto;
-//         padding-top: 20px;
-//     }
-//     // .form_white{
-//     //     width: 208px;
-//     //     min-height: 60px;
-//     //     background-color: rgb(180, 8, 8);
-//     //     border-radius: 30px;
-//     // }
-    
-// }
 .section-skill{
     &__form{
         display: flex;
@@ -508,16 +489,6 @@ footer{
         p{
             font-size: 17px;
             font-family: 'Source Sans Pro', sans-serif;
-        }
-    }
-}
-@media (max-width:768px) {
-    .apple_watch{
-        width: 30px;
-    }
-    .apple{
-        &_watch{
-
         }
     }
 }
